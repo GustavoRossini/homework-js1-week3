@@ -18,6 +18,11 @@ console.log(namesArray.length); //2
 
 function find(cities, letter){
 	var counter = 0;
+	for (var i = 0; i < cities.length; i += 1){
+		var cityName = cities[i]
+		if (cityName.startsWith(letter))
+		counter += 1;
+	}
 	//your code here
 	return counter;
 }

@@ -5,6 +5,14 @@ Given an array of numbers, create a function to return the maximum
 
 function max(numbers){
     //your code here
+    let maxValue = -Infinity;
+    for (let i = 0; i < numbers.length; i++) {
+        let currentNumber = numbers[i];
+        if (currentNumber > maxValue) {
+            maxValue = currentNumber;
+        }
+    }
+    return maxValue;
 }
 
 const numbersArray1 = [1,3,5,9];

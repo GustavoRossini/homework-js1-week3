@@ -17,3 +17,11 @@ console.log(abc.length);
 */
 
 //your code here
+for (var i = 1; i < 8; i += 1) {
+    
+    var str = "#";
+    var text = str.repeat(i); 
+    
+    console.log (text);
+
+}
